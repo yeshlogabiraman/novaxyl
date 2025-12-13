@@ -1,78 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>NovaXYL Consulting – Coming Soon</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novaxyl Consulting | Coming Soon</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Base Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-<style>
-    body {
-        margin: 0;
-        padding: 0;
-        background: linear-gradient(180deg, #0D0D0D, #111111, #0F0F0F);
-        font-family: "Helvetica Neue", Arial, sans-serif;
-        color: #E4C27A;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        text-align: center;
-        overflow: hidden;
-    }
+        body {
+            background-color: #0F0F0F; /* Dark background */
+            color: #E0E0E0;
+            font-family: 'Cardo', serif;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            overflow: hidden;
+        }
 
-    .container {
-        animation: fadeIn 2s ease-in-out;
-        padding: 20px;
-    }
+        /* Ambient Background Effect */
+        .glow {
+            position: absolute;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(197, 160, 89, 0.08) 0%, rgba(15, 15, 15, 0) 70%);
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: -1;
+        }
 
-    .logo-container {
-        display: inline-block;
-        background: radial-gradient(circle at center, rgba(25,25,25,0.9), rgba(10,10,10,0.95));
-        padding: 40px;
-        border-radius: 18px;
-        box-shadow: 0 0 35px rgba(0,0,0,0.7);
-    }
+        /* Container */
+        .container {
+            max-width: 800px;
+            padding: 2rem;
+            animation: fadeIn 2s ease-in-out;
+        }
 
-    .logo {
-        width: 420px;
-        height: auto;
-        opacity: 0.98;
-        filter: drop-shadow(0 0 12px rgba(0,0,0,0.6));
-    }
+        /* Logo Area */
+        .logo-wrapper {
+            margin-bottom: 2rem;
+        }
 
-    /* LIGHTER GOLD GRADIENT (MATCHES LOGO) */
-    .coming-soon {
-        margin-top: 45px;
-        font-size: 38px;
-        font-weight: 300;
-        letter-spacing: 6px;
-        background: linear-gradient(
-            90deg,
-            #B8873C,
-            #D1A859,
-            #E4C27A
-        );
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        text-shadow: 0 0 18px rgba(0,0,0,0.6);
-    }
+        .logo-wrapper img {
+            max-width: 450px; /* Slight increase for impact */
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
 
-    @keyframes fadeIn {
-        from { opacity: 0; transform: translateY(20px); }
-        to   { opacity: 1; transform: translateY(0); }
-    }
-</style>
+        /* Text Content */
+        h1 {
+            font-size: 1.4rem;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            color: #C5A059; /* Gold Color */
+            margin-bottom: 1rem;
+            font-weight: 400;
+        }
+
+        p.tagline {
+            font-size: 1.1rem;
+            color: #C5A059; /* Gold Color (Updated) */
+            letter-spacing: 1px;
+            margin-bottom: 0;
+            font-family: 'Cardo', serif;
+            font-weight: 400;
+            opacity: 0.9; /* Slight opacity for elegance */
+        }
+
+        /* Footer */
+        footer {
+            position: absolute;
+            bottom: 40px;
+            font-size: 0.85rem;
+            color: #C5A059; /* Gold Color (Updated) */
+            letter-spacing: 1px;
+            opacity: 0.7; /* Subtle fade so it doesn't distract from logo */
+        }
+
+        /* Animation */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        /* Mobile Responsiveness */
+        @media (max-width: 600px) {
+            .logo-wrapper img { max-width: 85%; }
+            h1 { font-size: 1.1rem; }
+            p.tagline { font-size: 0.9rem; }
+        }
+    </style>
 </head>
-
 <body>
 
-<div class="container">
-    <div class="logo-container">
-        <img src="logo.png" alt="NovaXYL Logo" class="logo">
+    <div class="glow"></div>
+
+    <div class="container">
+        <div class="logo-wrapper">
+            <img src="logo-black.png" alt="Novaxyl Consulting Logo">
+        </div>
+
+        <p class="tagline">Strategy | Solution | Governance | Execution</p>
+	<br>
+	<h1>Coming Soon</h1>
     </div>
 
-    <div class="coming-soon">COMING SOON</div>
-</div>
+    <footer>
+        &copy; 2025 Novaxyl Consulting. All Rights Reserved.
+    </footer>
 
 </body>
 </html>
