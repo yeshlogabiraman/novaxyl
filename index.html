@@ -3,125 +3,414 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Novaxyl Consulting | Coming Soon</title>
+    
+    <!-- SEO Meta Tags -->
+    <title>NOVAXYL Consulting | AI Strategy & Technology Execution</title>
+    <meta name="description" content="Transform AI vision into value. 20+ years expertise in AI strategy, governance, and execution for Fortune 500 companies and innovative startups. Vendor-neutral consulting.">
+    <meta name="keywords" content="AI consulting, AI strategy, digital transformation, technology governance, AI execution, enterprise AI, program management, vendor neutral consulting">
+    <meta name="author" content="NOVAXYL Consulting">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph for Social Sharing -->
+    <meta property="og:title" content="NOVAXYL Consulting | AI Strategy & Technology Execution">
+    <meta property="og:description" content="Transform AI vision into value through strategic AI and technology consulting.">
+    <meta property="og:image" content="https://novaxyl.com/images/logo.png">
+    <meta property="og:url" content="https://novaxyl.com">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="NOVAXYL Consulting | AI Strategy & Technology Execution">
+    <meta name="twitter:description" content="Transform AI vision into value through strategic AI and technology consulting.">
+    <meta name="twitter:image" content="https://novaxyl.com/images/logo.png">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://novaxyl.com/">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/logo.png">
+    
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Work+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
-    <style>
-        /* Base Reset */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            background-color: #0F0F0F; /* Dark background */
-            color: #E0E0E0;
-            font-family: 'Cardo', serif;
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            overflow: hidden;
-        }
-
-        /* Ambient Background Effect */
-        .glow {
-            position: absolute;
-            width: 600px;
-            height: 600px;
-            background: radial-gradient(circle, rgba(197, 160, 89, 0.08) 0%, rgba(15, 15, 15, 0) 70%);
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            z-index: -1;
-        }
-
-        /* Container */
-        .container {
-            max-width: 800px;
-            padding: 2rem;
-            animation: fadeIn 2s ease-in-out;
-        }
-
-        /* Logo Area */
-        .logo-wrapper {
-            margin-bottom: 2rem;
-        }
-
-        .logo-wrapper img {
-            max-width: 450px; /* Slight increase for impact */
-            height: auto;
-            display: block;
-            margin: 0 auto;
-        }
-
-        /* Text Content */
-        h1 {
-            font-size: 1.4rem;
-            letter-spacing: 4px;
-            text-transform: uppercase;
-            color: #C5A059; /* Gold Color */
-            margin-bottom: 1rem;
-            font-weight: 400;
-        }
-
-        p.tagline {
-            font-size: 1.1rem;
-            color: #C5A059; /* Gold Color (Updated) */
-            letter-spacing: 1px;
-            margin-bottom: 0;
-            font-family: 'Cardo', serif;
-            font-weight: 400;
-            opacity: 0.9; /* Slight opacity for elegance */
-        }
-
-        /* Footer */
-        footer {
-            position: absolute;
-            bottom: 40px;
-            font-size: 0.85rem;
-            color: #C5A059; /* Gold Color (Updated) */
-            letter-spacing: 1px;
-            opacity: 0.7; /* Subtle fade so it doesn't distract from logo */
-        }
-
-        /* Animation */
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        
-        /* Mobile Responsiveness */
-        @media (max-width: 600px) {
-            .logo-wrapper img { max-width: 85%; }
-            h1 { font-size: 1.1rem; }
-            p.tagline { font-size: 0.9rem; }
-        }
-    </style>
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    
+    <!-- Google Analytics - Replace G-XXXXXXXXXX with your tracking ID -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX');
+    </script>
 </head>
 <body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" style="text-decoration: none;">
+                <div class="logo-container">
+                    <img src="images/logo.png" alt="NOVAXYL Consulting - AI and Technology Strategy" class="logo-image-img" loading="eager">
+                    <div class="logo-text-container">
+                        <div class="logo-text">NOVAXYL</div>
+                        <div class="logo-subtext">CONSULTING</div>
+                    </div>
+                </div>
+            </a>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#approach">Our Approach</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
 
-    <div class="glow"></div>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>NOVAXYL</h1>
+            <div class="hero-pronunciation">(pronounced NOH‑vuh‑ak‑suhl)</div>
+            <div class="hero-tagline">Strategy | Solution | Governance | Execution</div>
+            <p class="hero-description">
+                We help leaders move from vision to value through strategic AI and technology consulting. 
+                Combining 20+ years of enterprise transformation expertise with hands-on execution excellence—delivering complete digital transformation solutions from strategy through implementation.
+            </p>
+            <a href="#contact" class="cta-button">Architect Tomorrow</a>
+        </div>
+    </section>
 
-    <div class="container">
-        <div class="logo-wrapper">
-            <img src="logo.png" alt="Novaxyl Consulting Logo">
+    <!-- About Section -->
+    <section id="about">
+        <h2>What Sets Us Apart</h2>
+        <p class="section-subtitle">Two decades leading AI transformation, product development, and enterprise programs across Fortune 500 companies and innovative startups worldwide. We deliver end-to-end solutions for digital transformation—from strategy and architecture to hands-on execution and governance.</p>
+        
+        <div class="about-grid">
+            <div class="about-card">
+                <h3>AI, Data & Solution Consulting</h3>
+                <p>7,500+ hours of deep expertise in AI strategy, data architecture, and solution design. From proof of concept to enterprise-scale implementation with measurable business impact.</p>
+            </div>
+            
+            <div class="about-card">
+                <h3>Large-Scale Program Management</h3>
+                <p>500,000+ hours managing complex enterprise programs across Fortune 500 companies and innovative startups. Proven track record in onshore, offshore, and nearshore delivery models.</p>
+            </div>
+            
+            <div class="about-card">
+                <h3>Product Built from Concept to Scale</h3>
+                <p>Successfully built and scaled SaaS products generating multi-million dollar revenue. Deep understanding of both startup agility and enterprise governance frameworks.</p>
+            </div>
+            
+            <div class="about-card">
+                <h3>Global Experience</h3>
+                <p>Led transformations across USA, UK, Middle East, Far East, and India. Dynamic stakeholder engagement from startup founders to Fortune 500 C-suite executives.</p>
+            </div>
+            
+            <div class="about-card">
+                <h3>Sales & Pre-Sales Excellence</h3>
+                <p>Led major bids securing significant enterprise contracts. Expert at translating complex technical architecture into compelling business value and competitive positioning.</p>
+            </div>
+            
+            <div class="about-card">
+                <h3>Vendor-Neutral Technology Depth</h3>
+                <p>Deep hands-on experience with AWS, Azure, AI platforms, and modern data infrastructure. Independent focus with no vendor or partner influence—pure client advocacy.</p>
+            </div>
         </div>
 
-        <p class="tagline">Strategy | Solution | Governance | Execution</p>
-	<br>
-	<h1>Coming Soon</h1>
-    </div>
+        <!-- Founder Section -->
+        <div class="founder-section">
+            <div class="founder-content">
+                <img src="images/founder.png" alt="Yeshwanth Logabiraman, Founder and Principal of NOVAXYL Consulting" class="founder-image" loading="lazy">
+                <div class="founder-info">
+                    <h3>Yeshwanth Logabiraman</h3>
+                    <div class="founder-title">Founder & Principal</div>
+                    <p class="founder-bio">
+                        I began my career as a software developer, building systems hands-on, and over time progressed into senior leadership roles delivering large-scale enterprise and consulting engagements. My experience spans leading complex global programs, building and scaling products, and managing multi-client consulting portfolios—providing an end-to-end perspective across engineering, architecture, strategy, governance, and execution.
+                    </p>
+                    <p class="founder-bio">
+                        Over the years, I've seen how large organizations often allow layers of process and internal priorities to drive solutions—introducing complexity where focus and simplicity would be more effective. Novaxyl was founded to offer a different model. We deliver enterprise-grade AI and technology solutions without corporate overhead, working directly with leadership teams to define clear strategies, establish pragmatic governance, and execute solutions that are purposeful, scalable, and aligned to real business outcomes.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Services Section -->
+    <section id="services">
+        <h2>Our Services</h2>
+        <p class="section-subtitle">Strategic consulting services designed to transform AI vision into measurable business value through proven frameworks and hands-on expertise.</p>
+        
+        <div class="services-grid">
+            <!-- Service 1 -->
+            <div class="service-card">
+                <div class="service-number">01</div>
+                <h3>AI Use Case Mapping & Solutioning</h3>
+                
+                <div class="service-challenge">
+                    <h4>Challenges We Solve</h4>
+                    <ul>
+                        <li>AI ideas exist, but feasibility is unclear</li>
+                        <li>Data readiness is unknown or overstated</li>
+                        <li>No clear basis to prioritize investments</li>
+                    </ul>
+                </div>
+                
+                <div class="service-outcomes">
+                    <h4>What You Get</h4>
+                    <ul>
+                        <li>Clear, prioritized AI use-case portfolio</li>
+                        <li>Data readiness assessment (quality, availability, governance)</li>
+                        <li>Technical feasibility across data, security, architecture</li>
+                        <li>Solution architecture blueprints (TOGAF-compliant)</li>
+                        <li>Vendor-ready direction with reduced execution risk</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Service 2 -->
+            <div class="service-card">
+                <div class="service-number">02</div>
+                <h3>AI Strategy & Roadmap</h3>
+                
+                <div class="service-challenge">
+                    <h4>Challenges We Solve</h4>
+                    <ul>
+                        <li>No unified AI vision aligned to business goals</li>
+                        <li>Unclear investment priorities and timelines</li>
+                        <li>Difficulty connecting AI initiatives to ROI</li>
+                    </ul>
+                </div>
+                
+                <div class="service-outcomes">
+                    <h4>What You Get</h4>
+                    <ul>
+                        <li>Comprehensive AI strategy aligned to business objectives</li>
+                        <li>Phased roadmap from POC to MVP to production</li>
+                        <li>Data-backed investment decisions</li>
+                        <li>Clear prioritization by value and readiness</li>
+                        <li>Risk mitigation and governance frameworks</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Service 3 -->
+            <div class="service-card">
+                <div class="service-number">03</div>
+                <h3>AI Execution Governance</h3>
+                
+                <div class="service-challenge">
+                    <h4>Challenges We Solve</h4>
+                    <ul>
+                        <li>Execution lacks control and visibility</li>
+                        <li>Scope creep and unclear ownership</li>
+                        <li>Limited executive insight into risks</li>
+                    </ul>
+                </div>
+                
+                <div class="service-outcomes">
+                    <h4>What You Get</h4>
+                    <ul>
+                        <li>Stage-gate governance and decision checkpoints</li>
+                        <li>Architecture, security, and quality oversight</li>
+                        <li>Vendor performance and SLA governance</li>
+                        <li>Risk, issue, and change control</li>
+                        <li>Executive dashboards for status and reporting</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Service 4 -->
+            <div class="service-card">
+                <div class="service-number">04</div>
+                <h3>Product Solution, Roadmap & Execution Governance</h3>
+                
+                <div class="service-challenge">
+                    <h4>Challenges We Solve</h4>
+                    <ul>
+                        <li>Product vision lacks clarity and market validation</li>
+                        <li>Feature prioritization and MVP definition unclear</li>
+                        <li>Execution discipline needed for market success</li>
+                    </ul>
+                </div>
+                
+                <div class="service-outcomes">
+                    <h4>What You Get</h4>
+                    <ul>
+                        <li>Clear product vision with market validation</li>
+                        <li>Prioritized roadmap (MVP → Full Product)</li>
+                        <li>Technical architecture and data strategy</li>
+                        <li>Go-to-market planning with pricing</li>
+                        <li>Product governance framework</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Service 5 -->
+            <div class="service-card">
+                <div class="service-number">05</div>
+                <h3>Program Leadership & Delivery Oversight</h3>
+                
+                <div class="service-challenge">
+                    <h4>Challenges We Solve</h4>
+                    <ul>
+                        <li>Large programs stall due to complexity</li>
+                        <li>Dependency and coordination risks</li>
+                        <li>Leadership needs confidence in outcomes</li>
+                    </ul>
+                </div>
+                
+                <div class="service-outcomes">
+                    <h4>What You Get</h4>
+                    <ul>
+                        <li>Program governance and steering cadence</li>
+                        <li>Cross-vendor coordination and dependency management</li>
+                        <li>Budget, milestone, and risk oversight</li>
+                        <li>Executive and board-level reporting</li>
+                        <li>On-time, on-budget delivery</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Approach Section -->
+    <section id="approach">
+        <h2>Our Consulting Approach</h2>
+        <p class="section-subtitle">Strategy with you. Execution through your teams or our trusted partners. Governance by us. A proven model that builds capability while delivering results.</p>
+        
+        <div class="approach-container">
+            <div class="approach-grid">
+                <div class="approach-item">
+                    <h4>Partner with Leaders</h4>
+                    <p>Work alongside business, data, and technology leaders to align objectives and define strategy</p>
+                </div>
+                
+                <div class="approach-item">
+                    <h4>Collaborate with Teams</h4>
+                    <p>Work alongside your teams and vendors to translate strategy into practical execution plans</p>
+                </div>
+                
+                <div class="approach-item">
+                    <h4>Provide Governance</h4>
+                    <p>Maintain execution oversight, risk control, and decision support throughout delivery</p>
+                </div>
+                
+                <div class="approach-item">
+                    <h4>Enable Your Teams</h4>
+                    <p>Build stronger internal capabilities without creating dependency on external consultants</p>
+                </div>
+            </div>
+
+            <div class="ownership-model">
+                <h4>Ownership Model</h4>
+                <div class="ownership-grid">
+                    <div class="ownership-item">
+                        <div class="ownership-label novaxyl">NOVAXYL</div>
+                        <div class="ownership-desc">Strategy, data readiness, architecture</div>
+                    </div>
+                    <div class="ownership-item">
+                        <div class="ownership-label novaxyl">NOVAXYL</div>
+                        <div class="ownership-desc">Execution governance and risk control</div>
+                    </div>
+                    <div class="ownership-item">
+                        <div class="ownership-label"><span class="client-text">CLIENT</span> / <span class="novaxyl-text">NOVAXYL PARTNERS</span></div>
+                        <div class="ownership-desc">Build, delivery, operations</div>
+                    </div>
+                    <div class="ownership-item">
+                        <div class="ownership-label"><span class="client-text">CLIENT</span> / <span class="novaxyl-text">NOVAXYL</span></div>
+                        <div class="ownership-desc">Retains delivery ownership</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="contact-container">
+            <h2>Let's Transform Your Vision Into Value</h2>
+            <p class="section-subtitle">Ready to architect tomorrow? Reach out to discuss your AI and technology strategy needs.</p>
+            
+            <div class="contact-email-box">
+                <a href="mailto:contact@novaxyl.com" class="email-link">contact@novaxyl.com</a>
+                
+                <div class="email-requirements">
+                    <h4>To help us serve you better, please include:</h4>
+                    <ul class="requirement-list">
+                        <li><strong>Company Name</strong> and your role</li>
+                        <li><strong>Brief Description</strong> of your current challenge or objective</li>
+                        <li><strong>Preferred Contact Method</strong> and best time to reach you</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer>
-        &copy; 2025 Novaxyl Consulting. All Rights Reserved.
+        <div class="footer-content">
+            <div class="footer-logo">NOVAXYL CONSULTING</div>
+            <div class="footer-tagline">Strategy | Solution | Governance | Execution</div>
+            
+            <div class="footer-links">
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#approach">Our Approach</a>
+                <a href="blog.html">Blog</a>
+                <a href="#contact">Contact</a>
+            </div>
+            
+            <div class="copyright">
+                © 2025 NOVAXYL Consulting. All rights reserved.
+            </div>
+        </div>
     </footer>
 
-</body>
-</html>
-
+    <!-- Structured Data (Schema Markup) -->
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "NOVAXYL Consulting",
+      "image": "https://novaxyl.com/images/logo.png",
+      "description": "AI strategy, solution, governance, and execution consulting for enterprise transformation",
+      "url": "https://novaxyl.com",
+      "email": "contact@novaxyl.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "US"
+      },
+      "areaServed": [
+        {
+          "@type": "Place",
+          "name": "United States"
+        },
+        {
+          "@type": "Place", 
+          "name": "United Kingdom"
+        },
+        {
+          "@type": "Place",
+          "name": "Middle East"
+        },
+        {
+          "@type": "Place",
+          "name": "Far East"
+        },
+        {
+          "@type": "Place",
+          "name": "India"
+        }
+      ],
+      "founder": {
+        "@type": "Person",
+        "name": "Yeshwanth Logabiraman",
+        "jobTitle": "Founder & Principal"
+      },
+      "serviceType": [
+        "AI Strategy Consulting",
+        "Technology Governance
