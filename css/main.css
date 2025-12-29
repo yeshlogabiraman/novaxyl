@@ -10,8 +10,8 @@
             --dark-tertiary: #2A2A2A;
             --gold: #B09256;
             --gold-light: #C4A266;
-            --teal: #06785A;
-            --teal-light: #088569;
+            --blue: #1E88E5;
+            --blue-light: #42A5F5;
             --text-primary: #F5F5F5;
             --text-secondary: #B8B8B8;
             --text-tertiary: #888888;
@@ -394,7 +394,7 @@
 
         .founder-title {
             font-size: 1.1rem;
-            color: var(--teal-light);
+            color: var(--blue-light);
             margin-bottom: 2rem;
             font-weight: 400;
             letter-spacing: 1px;
@@ -535,7 +535,7 @@
         }
 
         .service-outcomes h4 {
-            color: var(--teal-light);
+            color: var(--blue-light);
             font-size: 0.85rem;
             text-transform: uppercase;
             letter-spacing: 2px;
@@ -555,7 +555,7 @@
 
         .service-outcomes li::before {
             content: "✓";
-            color: var(--teal-light);
+            color: var(--blue-light);
             font-weight: 600;
             margin-right: 1rem;
         }
@@ -563,14 +563,14 @@
         .engagement-model {
             display: inline-block;
             background: rgba(6, 120, 90, 0.15);
-            color: var(--teal-light);
+            color: var(--blue-light);
             padding: 0.6rem 1.3rem;
             border-radius: 0;
             font-size: 0.8rem;
             font-weight: 500;
             margin-top: 1.5rem;
             letter-spacing: 1px;
-            border: 1px solid var(--teal);
+            border: 1px solid var(--blue);
         }
 
         /* Approach Section */
@@ -628,7 +628,7 @@
         }
 
         .ownership-model h4 {
-            color: var(--teal-light);
+            color: var(--blue-light);
             margin-bottom: 1.5rem;
             text-align: center;
             font-size: 1.1rem;
@@ -660,7 +660,7 @@
         }
 
         .ownership-label.client {
-            color: var(--teal-light);
+            color: var(--blue-light);
         }
 
         .ownership-label.partners {
@@ -668,7 +668,7 @@
         }
 
         .client-text {
-            color: var(--teal-light);
+            color: var(--blue-light);
         }
 
         .novaxyl-text {
@@ -704,7 +704,7 @@
 
         .blog-image {
             height: 220px;
-            background: linear-gradient(135deg, var(--teal) 0%, var(--gold) 100%);
+            background: linear-gradient(135deg, var(--blue) 0%, var(--gold) 100%);
             display: flex;
             align-items: center;
             justify-content: center;
@@ -750,7 +750,7 @@
         }
 
         .read-more {
-            color: var(--teal-light);
+            color: var(--blue-light);
             text-decoration: none;
             font-weight: 500;
             transition: color 0.3s;
@@ -875,50 +875,13 @@
         footer {
             background: var(--dark-bg);
             border-top: 1px solid rgba(176, 146, 86, 0.2);
-            padding: 4rem 5%;
+            padding: 2rem 5%;
             text-align: center;
         }
 
         .footer-content {
             max-width: 1600px;
             margin: 0 auto;
-        }
-
-        .footer-logo {
-            font-size: 2.5rem;
-            color: var(--gold);
-            margin-bottom: 1rem;
-            letter-spacing: 4px;
-            font-family: 'Work Sans', sans-serif;
-            font-weight: 500;
-        }
-
-        .footer-tagline {
-            color: var(--text-tertiary);
-            margin-bottom: 3rem;
-            font-size: 0.9rem;
-            letter-spacing: 2px;
-            font-weight: 300;
-        }
-
-        .footer-links {
-            display: flex;
-            justify-content: center;
-            gap: 3rem;
-            margin-bottom: 3rem;
-            flex-wrap: wrap;
-        }
-
-        .footer-links a {
-            color: var(--text-secondary);
-            text-decoration: none;
-            transition: color 0.3s;
-            font-size: 0.9rem;
-            letter-spacing: 1px;
-        }
-
-        .footer-links a:hover {
-            color: var(--gold);
         }
 
         .copyright {

@@ -10,8 +10,8 @@
             --dark-tertiary: #2A2A2A;
             --gold: #B09256;
             --gold-light: #C4A266;
-            --teal: #06785A;
-            --teal-light: #088569;
+            --blue: #1E88E5;
+            --blue-light: #42A5F5;
             --text-primary: #F5F5F5;
             --text-secondary: #B8B8B8;
             --text-tertiary: #888888;
@@ -137,13 +137,13 @@
 
         /* Hero Section */
         .hero {
-            min-height: 60vh;
+            min-height: 40vh;
             display: flex;
             align-items: center;
             justify-content: center;
             background: linear-gradient(170deg, var(--dark-bg) 0%, var(--dark-secondary) 100%);
             text-align: center;
-            padding: 10rem 5% 4rem;
+            padding: 8rem 5% 3rem;
             position: relative;
             overflow: hidden;
         }
@@ -188,7 +188,7 @@
 
         /* Blog Section */
         section {
-            padding: 6rem 5%;
+            padding: 2rem 5%;
             max-width: 1400px;
             margin: 0 auto;
         }
@@ -197,7 +197,13 @@
             display: grid;
             grid-template-columns: 1fr;
             max-width: 600px;
-            margin: 4rem auto 0;
+            margin: 2rem auto 0;
+        }
+
+        .blog-card-link {
+            text-decoration: none;
+            display: block;
+            color: inherit;
         }
 
         .blog-card {
@@ -206,6 +212,7 @@
             overflow: hidden;
             transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
             border: 1px solid rgba(176, 146, 86, 0.15);
+            cursor: pointer;
         }
 
         .blog-card:hover {
@@ -213,9 +220,13 @@
             border-color: var(--gold);
         }
 
+        .blog-card-link:hover .blog-card h2 {
+            color: var(--blue-light);
+        }
+
         .blog-image {
             height: 280px;
-            background: linear-gradient(135deg, var(--teal) 0%, var(--gold) 100%);
+            background: linear-gradient(135deg, var(--blue) 0%, var(--gold) 100%);
             display: flex;
             align-items: center;
             justify-content: center;
@@ -244,7 +255,7 @@
             font-weight: 500;
         }
 
-        .blog-card h3 {
+        .blog-card h2 {
             color: var(--gold);
             margin-bottom: 1.5rem;
             font-size: 2rem;
@@ -262,7 +273,7 @@
         }
 
         .read-more {
-            color: var(--teal-light);
+            color: var(--blue-light);
             text-decoration: none;
             font-weight: 500;
             transition: color 0.3s;
@@ -278,50 +289,13 @@
         footer {
             background: var(--dark-bg);
             border-top: 1px solid rgba(176, 146, 86, 0.2);
-            padding: 4rem 5%;
+            padding: 2rem 5%;
             text-align: center;
         }
 
         .footer-content {
             max-width: 1600px;
             margin: 0 auto;
-        }
-
-        .footer-logo {
-            font-size: 2.5rem;
-            color: var(--gold);
-            margin-bottom: 1rem;
-            letter-spacing: 4px;
-            font-family: 'Work Sans', sans-serif;
-            font-weight: 500;
-        }
-
-        .footer-tagline {
-            color: var(--text-tertiary);
-            margin-bottom: 3rem;
-            font-size: 0.9rem;
-            letter-spacing: 2px;
-            font-weight: 300;
-        }
-
-        .footer-links {
-            display: flex;
-            justify-content: center;
-            gap: 3rem;
-            margin-bottom: 3rem;
-            flex-wrap: wrap;
-        }
-
-        .footer-links a {
-            color: var(--text-secondary);
-            text-decoration: none;
-            transition: color 0.3s;
-            font-size: 0.9rem;
-            letter-spacing: 1px;
-        }
-
-        .footer-links a:hover {
-            color: var(--gold);
         }
 
         .copyright {
@@ -386,7 +360,7 @@
                 padding: 2rem;
             }
 
-            .blog-card h3 {
+            .blog-card h2 {
                 font-size: 1.6rem;
             }
         }
@@ -419,7 +393,7 @@
                 padding: 1.5rem;
             }
 
-            .blog-card h3 {
+            .blog-card h2 {
                 font-size: 1.4rem;
             }
         }

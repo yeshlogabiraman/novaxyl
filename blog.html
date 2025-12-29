@@ -35,17 +35,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Work+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
-    <!-- Main CSS -->
+    <!-- Blog CSS -->
     <link rel="stylesheet" href="css/blog.css">
     
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-XXXXXXXXXX');
-    </script>
+    <script src="js/analytics.js"></script>
 </head>
 <body>
     <!-- Navigation -->
@@ -83,34 +78,25 @@
     <!-- Blog Section -->
     <section>
         <div class="blog-grid">
-            <article class="blog-card">
-                <div class="blog-image">🎯</div>
-                <div class="blog-content">
-                    <div class="blog-date">Coming Soon</div>
-                    <h2>The Data Readiness Trap</h2>
-                    <p class="blog-excerpt">
-                        Why most AI projects fail before they start, and how to assess true data readiness across quality, availability, and governance dimensions.
-                    </p>
-                    <a href="#" class="read-more">READ MORE →</a>
-                </div>
-            </article>
+            <a href="blog-data-readiness-trap.html" class="blog-card-link">
+                <article class="blog-card">
+                    <div class="blog-image">📊</div>
+                    <div class="blog-content">
+                        <div class="blog-date">December 29, 2025</div>
+                        <h2>The Data Readiness Trap</h2>
+                        <p class="blog-excerpt">
+                            Why early AI success can be the most misleading signal. How AI projects stutter when data is available but not truly ready, and what to do about it.
+                        </p>
+                        <span class="read-more">READ MORE →</span>
+                    </div>
+                </article>
+            </a>
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
         <div class="footer-content">
-            <div class="footer-logo">NOVAXYL CONSULTING</div>
-            <div class="footer-tagline">Strategy | Solution | Governance | Execution</div>
-            
-            <div class="footer-links">
-                <a href="index.html#about">About</a>
-                <a href="index.html#services">Services</a>
-                <a href="index.html#approach">Our Approach</a>
-                <a href="blog.html">Blog</a>
-                <a href="index.html#contact">Contact</a>
-            </div>
-            
             <div class="copyright">
                 © 2025 NOVAXYL Consulting. All rights reserved.
             </div>

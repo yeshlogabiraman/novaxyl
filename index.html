@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- SEO Meta Tags -->
+    <meta name="google-site-verification" content="4juHEI1b9C19c2FHXjwxu_cgZvUlqRhwSTc7OE86j58">
     <title>NOVAXYL Consulting | AI Strategy & Technology Execution</title>
     <meta name="description" content="Transform AI vision into value. 20+ years expertise in AI strategy, governance, and execution for Fortune 500 companies and innovative startups. Vendor-neutral consulting.">
     <meta name="keywords" content="AI consulting, AI strategy, digital transformation, technology governance, AI execution, enterprise AI, program management, vendor neutral consulting">
@@ -38,14 +39,9 @@
     <!-- Main CSS -->
     <link rel="stylesheet" href="css/main.css">
     
-    <!-- Google Analytics - Replace G-XXXXXXXXXX with your tracking ID -->
+    <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-XXXXXXXXXX');
-    </script>
+    <script src="js/analytics.js"></script>
 </head>
 <body>
     <!-- Navigation -->
@@ -336,7 +332,7 @@
             <p class="section-subtitle">Ready to architect tomorrow? Reach out to discuss your AI and technology strategy needs.</p>
             
             <div class="contact-email-box">
-                <a href="mailto:contact@novaxyl.com" class="email-link">contact@novaxyl.com</a>
+                <a href="#" class="email-link" id="contact-email">Loading...</a>
                 
                 <div class="email-requirements">
                     <h4>To help us serve you better, please include:</h4>
@@ -353,17 +349,6 @@
     <!-- Footer -->
     <footer>
         <div class="footer-content">
-            <div class="footer-logo">NOVAXYL CONSULTING</div>
-            <div class="footer-tagline">Strategy | Solution | Governance | Execution</div>
-            
-            <div class="footer-links">
-                <a href="#about">About</a>
-                <a href="#services">Services</a>
-                <a href="#approach">Our Approach</a>
-                <a href="blog.html">Blog</a>
-                <a href="#contact">Contact</a>
-            </div>
-            
             <div class="copyright">
                 © 2025 NOVAXYL Consulting. All rights reserved.
             </div>
@@ -371,7 +356,7 @@
     </footer>
 
     <!-- Structured Data (Schema Markup) -->
-    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="application/ld+json">
+    <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "ProfessionalService",
@@ -413,4 +398,16 @@
       },
       "serviceType": [
         "AI Strategy Consulting",
-        "Technology Governance
+        "Technology Governance",
+        "Digital Transformation",
+        "Program Management",
+        "Product Development Consulting"
+      ],
+      "priceRange": "$$$$"
+    }
+    </script>
+
+    <!-- Email Configuration -->
+    <script src="js/email-config.js"></script>
+</body>
+</html>
